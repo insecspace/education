@@ -23,3 +23,42 @@ root/
       - required_knowledge.md
 
 ```
+
+# Collections
+
+```
+Lesson:
+  title: "Lesson Title"
+  subject: "Lesson Subject"
+  number: "Integer"
+  tests: 
+    - 'test1'
+    - 'test2'
+    ...
+    - 'testN'
+
+  presentation: 
+    - 'presentation1'
+    - 'presentation2'
+    ...
+    - 'presentationN'
+  
+Test:
+  title: "Test Title"
+  count: "Integer"
+  time: "MM:SS"
+
+Post:
+  title: "Post Title"
+  tags: ['tag1', 'tag2', ... , 'tagN']
+  date: "YYYY-MM-DD HH:MM:SS +/-TTTT"
+
+Howto:
+  title: "HowTo Title"
+  tags: ['tag1', 'tag2', ... , 'tagN']
+  date: "YYYY-MM-DD HH:MM:SS +/-TTTT"
+
+Presentation:
+  title: "Presentation Title"
+  count: "Count Slides"
+```

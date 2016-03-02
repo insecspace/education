@@ -4,6 +4,20 @@ layout: default
 
 <div class="home">
 
+  <h1 class="page-heading">Lessons</h1>
+
+  <ul class="lesson-list">
+    {% for lesson in site.lessons %}
+      <li>
+        <span class="lesson-meta">{{ lesson.subject }} {{ lesson.number }}</span>
+
+        <h2>
+          <a class="lesson-link" href="{{ lesson.url | prepend: site.baseurl }}">{{ lesson.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
@@ -18,6 +32,16 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <h1 class="page-heading">Tests</h1>
 
+  <ul class="test-list">
+    {% for test in site.tests %}
+      <li>
+        <span class="test-meta">{{ test.time }} for {{ test.count }} questions</span>
+        <h2>
+          <a class="test-link" href="{{ test.url | prepend: site.baseurl }}">{{ test.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>  
 </div>

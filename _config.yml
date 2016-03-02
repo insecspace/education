@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: InSecSpace Education
+title: In Secure Space
 email: InSecSpace@gmail.com
 #description: > # this means to ignore newlines until "baseurl:"
 #  Write an awesome description for your new site here. You can edit this
@@ -19,3 +19,39 @@ github_username:  InSecSpace
 
 # Build settings
 markdown: kramdown
+
+collections:
+  howto:
+    output: true
+    permalink: /howto/:path/
+  lessons:
+    output: true
+    permalink: /lessons/:path/
+  presentations:
+    output: true
+    permalink: /presentations/:path/
+  tests:
+    output: true
+    permalink: /tests/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: howto
+    values:
+      layout: howto
+  - scope:
+      path: ""
+      type: lessons
+    values:
+      layout: lesson
+  - scope:
+      path: ""
+      type: presentations
+    values:
+      layout: presentation
+  - scope:
+      path: ""
+      type: tests
+    values:
+      layout: test

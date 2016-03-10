@@ -63,3 +63,8 @@ defaults:
       type: homeworks
     values:
       layout: homework
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

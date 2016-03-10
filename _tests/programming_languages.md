@@ -1,5 +1,5 @@
 ---
-title: Programming Languages
+title: Programming languages
 count: 45
 time: "20:00-30:00"
 ---

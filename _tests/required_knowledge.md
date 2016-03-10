@@ -1,16 +1,12 @@
 ---
-title: Required Knowledge
-count: 10
-time: "45:00"
+title: Programming Languages
+count: 45
+time: "20:00-30:00"
 ---
 
-- Question 1
-- Question 2
-- Question 3
-- Question 4
-- Question 5
-- Question 6
-- Question 7
-- Question 8
-- Question 9
-- Question 10
+# Тесты от Certification.Mail.Ru
+
+- [C++ тестирование](https://certification.mail.ru/tests/cpp/start/)
+- [HTML тестирование](https://certification.mail.ru/tests/html/start/)
+- [CSS тестирование](https://certification.mail.ru/tests/css/start/)
+- [Python тестирование](https://certification.mail.ru/tests/python/start/)

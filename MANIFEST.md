@@ -21,6 +21,8 @@ root/
       - ...
   - _tests/
       - required_knowledge.md
+  - _homework/
+      - software_engineering-1.md
 
 ```
 
@@ -42,6 +44,7 @@ Lesson:
     - 'presentation2'
     ...
     - 'presentationN'
+  homeworks_ids: ['id1', 'id2', ... , 'idN']
   
 Test:
   title: "Test Title"
@@ -61,4 +64,10 @@ Howto:
 Presentation:
   title: "Presentation Title"
   count: "Count Slides"
+
+Homework:
+  number: "Integer"
+  subject: "Subject Name"
+  lesson: "Integer"
+  points: "Integer"
 ```

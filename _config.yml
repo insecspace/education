@@ -33,6 +33,9 @@ collections:
   tests:
     output: true
     permalink: /tests/:path/
+  homeworks:
+    output: true
+    permalink: /homeworks/:path/
 
 defaults:
   - scope:
@@ -55,3 +58,8 @@ defaults:
       type: tests
     values:
       layout: test
+  - scope:
+      path: ""
+      type: homeworks
+    values:
+      layout: homework

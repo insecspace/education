@@ -2,13 +2,26 @@
 layout: default
 ---
 <article class="lesson">
-
-  <header class="lesson-header">
-    <h1 class="lesson-title">{{ lesson.title }}</h1>
-  </header>
-
   <div class="lesson-content">
     {{ content }}
   </div>
+  
+  {% if page.homework_ids %}
+  	<h1> Домашние задания </h1>
+  {% endif %}
 
+  <div class="lesson-homeworks">
+  	<ul>
+  	{% for id in page.homework_ids %}
+    {% for homework in site.homeworks %}
+      {% if homework.subject == page.subject %}
+      	{% if id == homework.number %}
+      	  <li><a href="{{ homework.url }}">Домашнее задание {{homework.number}}</a>
+      	{% endif %}
+      {% endif %}
+
+    {% endfor %}
+    {% endfor %}
+    </ul>
+  </div>
 </article>

@@ -1,1 +1,4 @@
-# education
+# Subjects
+
+- Software Engineering
+- Assembler

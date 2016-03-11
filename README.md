@@ -1,1 +1,4 @@
+# Subjects:
 
+- Software Engineering
+- Assembler
